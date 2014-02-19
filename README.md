@@ -34,7 +34,7 @@ los parametros utilizados para estas operaciones son los siguientes:
 
 es un parametro obligatorio, por que la api de meteosix requiere autenticacion para su uso, a traves de una clave publica, que es unica para cada cuenta de correo. 
 
-2. ####**locationId**
+2. **locationId**
 es el identificador que devuelve datos sobre un lugar, este parametro es opcional
 
 3. ####**coord**
