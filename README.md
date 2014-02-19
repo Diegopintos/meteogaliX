@@ -4,28 +4,34 @@
 
 
 #meteogalic 
-##api web sobre la informacion meteorologica en las costas de galicia
+##aplicacion web sobre la informacion meteorologica en las costas de galicia
 
-meteogalic es una api web gratuita de uso libre que funciona a traves de la URL,http://servizos.meteogalicia.es/apiv2
-usa los metodos GET y POST para poder consular la informacion, y la devuelve en formato KML, muy parecido a XML, y GEOJSON, parecido a JSON.
+**meteogalic** es una aplicacion web gratuita de uso libre que funciona conectandose a traves de la api de meteogalicia a traves de su URL: http://servizos.meteogalicia.es/apiv2
+usa los metodos GET y POST de HTTP para poder consultar la informacion, y la devuelve en formato XML y JSON.
+y se la presenta al usuario en formato amigable HTML.
 
-##metodos de uso de meteogalic
+##metodos de uso de la api de meteogalicia
+
+la api de meteogalicia, cuenta con los siguientes metodos, que le permiten al usuario consultar diferente informacion a traves de sus operaciones.
+
+### operaciones usadas por la api de meteogalicia:
+
+* **getTidesInfo**:
+este metodo devuelve la informacion sobre las mareas
+
+* **getSolarInfo**:
+este metodo muestra la informacion sobre salida y puesta del sol
+
+* **getNumericForecastInfo**
+este metodo muestra la prediccion numerica, atmosferica y oceanografica
 
 * **findPlaces**
-permite buscar lugares por nombre pasandole su valor al paremetro findPlaces?
+este metodo permite la busqueda de lugares a traves de una cadena de caracteres
 
-* **getTidesInfo**
-este operacion devuelve informacion sobre las mareas
+los parametros utilizados para estas operaciones son los siguientes:
 
-* **getNumericForeCastInfo**
-
-esta operacion devuelve la informacion numerica, atmosferica y oceanografica
-
-* **getSolarInfo**
-
-devuelve informacion sobre la salida y puesta del sol
-
-
+1. **API_KEY**
+la api de meteosix 
 
 
 
