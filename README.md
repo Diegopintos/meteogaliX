@@ -30,7 +30,7 @@ este metodo permite la busqueda de lugares a traves de una cadena de caracteres
 
 los parametros utilizados para estas operaciones son los siguientes:
 
-1. ####**API_KEY**
+1. **API_KEY**
 
 es un parametro obligatorio, por que la api de meteosix requiere autenticacion para su uso, a traves de una clave publica, que es unica para cada cuenta de correo. 
 
