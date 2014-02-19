@@ -11,10 +11,10 @@ usa los metodos GET y POST para poder consular la informacion, y la devuelve en 
 
 ##metodos de uso de meteogalic
 
-* findPlaces
+* **findPlaces**
 permite buscar lugares por nombre pasandole su valor al paremetro findPlaces?
 
-* getTidesInfo
+* **getTidesInfo**
 este operacion devuelve informacion sobre las mareas
 
 * **getNumericForeCastInfo**
