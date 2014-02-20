@@ -1,4 +1,3 @@
-
 ==========
 
 #meteogaliX 
@@ -46,7 +45,8 @@ en el siguiente enlace, se muestra una tabla, de los parametros usados en las op
 
 http://servizos.meteogalicia.es/api_manual/es/operations.html#parametros-comunes-a-las-operaciones-getnumericforecastinfo-gettidesinfo-getsolarinfo
 
-
+**algunos ejemplos de uso**
+http://servizos.meteogalicia.es/apiv2/getTidesInfo?coord=-8.637,43.45&API_KEY=***
  
 
 
