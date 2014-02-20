@@ -1,7 +1,7 @@
 ==========
 
 #meteogaliX 
-##aplicacion web sobre la informacion meteorologica en las costas de galicia
+##aplicacion web sobre la informacion meteorologica y oceanografica en las costas de galicia
 
 **meteogaliX** es una aplicacion web gratuita de uso libre que funciona conectandose a traves de la api de meteogalicia a traves de su URL: http://servizos.meteogalicia.es/apiv2
 usa los metodos GET y POST de HTTP para poder consultar la informacion, y la devuelve en formato XML y JSON.
@@ -46,7 +46,11 @@ en el siguiente enlace, se muestra una tabla, de los parametros usados en las op
 http://servizos.meteogalicia.es/api_manual/es/operations.html#parametros-comunes-a-las-operaciones-getnumericforecastinfo-gettidesinfo-getsolarinfo
 
 **algunos ejemplos de uso**
+
+Obtener datos de mareas para el puerto más cercano a un punto concreto:
+
 http://servizos.meteogalicia.es/apiv2/getTidesInfo?coord=-8.637,43.45&API_KEY=***
+
  
 
 
