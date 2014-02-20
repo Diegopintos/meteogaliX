@@ -7,7 +7,7 @@
 usa los metodos GET y POST de HTTP para poder consultar la informacion, y la devuelve en formato XML y JSON.
 y se la presenta al usuario en formato amigable HTML.
 
-**Funcionamiento de la aplicacion**
+##**Funcionamiento de la aplicacion**
 
 * se le solicitara al usuario que consulte la informacion de la busqueda de un dato, a traves de un formulario en HTML.
 
