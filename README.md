@@ -1,8 +1,6 @@
 
 ==========
 
-
-
 #meteogalic 
 ##aplicacion web sobre la informacion meteorologica en las costas de galicia
 
@@ -11,13 +9,13 @@ usa los metodos GET y POST de HTTP para poder consultar la informacion, y la dev
 y se la presenta al usuario en formato amigable HTML.
 
 **Funcionamiento de la aplicacion**
-1. se le solicitara al usuario que consulte la informacion de la busqueda de un lugar, a traves de un formulario en HTML.
+ se le solicitara al usuario que consulte la informacion de la busqueda de un lugar, a traves de un formulario en HTML.
 
-2. se conectara con la api de meteogalicia que devolvera la informacion en formato JSON o XML.
+* se conectara con la api de meteogalicia que devolvera la informacion en formato JSON o XML.
 
-3. se leeran los datos, y se mostraran en formato HTML al usuario
+* se leeran los datos, y se mostraran en formato HTML al usuario
 
-4. se usara la api de google maps para geolocalizar el lugar.
+* se usara la api de google maps para geolocalizar el lugar.
 
 para entender mejor el uso de la api que se usara para la aplicacion, usamos los siguientes metodos proporcionados por la api de meteogalicia:
 
