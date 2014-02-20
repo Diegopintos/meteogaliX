@@ -9,7 +9,8 @@ usa los metodos GET y POST de HTTP para poder consultar la informacion, y la dev
 y se la presenta al usuario en formato amigable HTML.
 
 **Funcionamiento de la aplicacion**
- se le solicitara al usuario que consulte la informacion de la busqueda de un lugar, a traves de un formulario en HTML.
+
+* se le solicitara al usuario que consulte la informacion de la busqueda de un lugar, a traves de un formulario en HTML.
 
 * se conectara con la api de meteogalicia que devolvera la informacion en formato JSON o XML.
 
