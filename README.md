@@ -28,6 +28,7 @@ la api de meteogalicia, cuenta con los siguientes metodos, que le permiten al us
 
 * ####**getTidesInfo**:
 este metodo devuelve la informacion sobre las mareas
+mas info: http://servizos.meteogalicia.es/api_manual/es/get_tides_info.html
 
 * ####**getSolarInfo**:
 este metodo muestra la informacion sobre salida y puesta del sol
