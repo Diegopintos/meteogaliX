@@ -1,10 +1,10 @@
 
 ==========
 
-#meteogalic 
+#meteogaliX 
 ##aplicacion web sobre la informacion meteorologica en las costas de galicia
 
-**meteogalic** es una aplicacion web gratuita de uso libre que funciona conectandose a traves de la api de meteogalicia a traves de su URL: http://servizos.meteogalicia.es/apiv2
+**meteogaliX** es una aplicacion web gratuita de uso libre que funciona conectandose a traves de la api de meteogalicia a traves de su URL: http://servizos.meteogalicia.es/apiv2
 usa los metodos GET y POST de HTTP para poder consultar la informacion, y la devuelve en formato XML y JSON.
 y se la presenta al usuario en formato amigable HTML.
 
