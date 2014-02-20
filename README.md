@@ -16,7 +16,7 @@ y se la presenta al usuario en formato amigable HTML.
 
 * se leeran los datos, y se mostraran en formato HTML al usuario
 
-* se usara la api de google maps para geolocalizar el lugar.
+* se usara la api de google maps para geolocalizar el lugar y mostrarlo.
 
 para entender mejor el uso de la api que se usara para la aplicacion, usamos los siguientes metodos proporcionados por la api de meteogalicia:
 
