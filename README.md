@@ -51,6 +51,12 @@ en el siguiente enlace, se muestra una tabla, de los parametros usados en las op
 
 http://servizos.meteogalicia.es/api_manual/es/operations.html#parametros-comunes-a-las-operaciones-getnumericforecastinfo-gettidesinfo-getsolarinfo
 
+##modelos de prediccion numerica
+La información de predicción numérica que sirve la API procede directamente de las salidas de los modelos de predicción numérica ejecutados diariamente por MeteoGalicia.
+
+mas info: http://servizos.meteogalicia.es/api_manual/es/models.html
+
+
 **algunos ejemplos de uso**
 
 Obtener datos de mareas para el puerto más cercano a un punto concreto:
