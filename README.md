@@ -45,6 +45,8 @@ mas info: http://servizos.meteogalicia.es/api_manual/es/get_numeric_forecast_inf
 este metodo permite la busqueda de lugares a traves de una cadena de caracteres
 mas info: http://servizos.meteogalicia.es/api_manual/es/find_places.html#ref-find-places
 
+###**parametros usados en la api**
+
 en el siguiente enlace, se muestra una tabla, de los parametros usados en las operaciones: 
 
 http://servizos.meteogalicia.es/api_manual/es/operations.html#parametros-comunes-a-las-operaciones-getnumericforecastinfo-gettidesinfo-getsolarinfo
