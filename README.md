@@ -23,6 +23,10 @@ para entender mejor el uso de la api que se usara para la aplicacion, usamos los
 
 la api de meteogalicia, cuenta con los siguientes metodos, que le permiten al usuario consultar diferente informacion a traves de sus operaciones.
 
+**estructura general**
+
+http://servizos.meteogalicia.es/apiv2/ruta_operación?[parámetros_de_la_operación]
+
 ### operaciones usadas por la api de meteogalicia:
 
 * ####**getTidesInfo**:
