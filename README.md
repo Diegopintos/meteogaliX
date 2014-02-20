@@ -10,13 +10,13 @@ y se la presenta al usuario en formato amigable HTML.
 
 **Funcionamiento de la aplicacion**
 
-* se le solicitara al usuario que consulte la informacion de la busqueda de un lugar, a traves de un formulario en HTML.
+* se le solicitara al usuario que consulte la informacion de la busqueda de un dato, a traves de un formulario en HTML.
 
 * se conectara con la api de meteogalicia que devolvera la informacion en formato JSON o XML.
 
 * se leeran los datos, y se mostraran en formato HTML al usuario
 
-* se usara la api de google maps para geolocalizar el lugar y mostrarlo.
+* uno vez los datos sean mostrados, se usara la api de google maps para geolocalizar el lugar y mostrarlo en el mapa.
 
 para entender mejor el uso de la api que se usara para la aplicacion, usamos los siguientes metodos proporcionados por la api de meteogalicia:
 
