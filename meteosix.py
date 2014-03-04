@@ -5,16 +5,25 @@ from jinja2 import Template
 import json
 from lxml import etree
 
-dicc = {'API_KEY':'tntmnZ85PrQ6AGw6ihuUGhqs894jl66UI8p4ph4rmbvcno3MIApKE0o2N1awzT2p'}
-response = requests.get('http://servizos.meteogalicia.es/apiv2/getTidesInfo', params={'coord':'-8.637,43.45','format':'application/json','API_KEY'
-:'tntmnZ85PrQ6AGw6ihuUGhqs894jl66UI8p4ph4rmbvcno3MIApKE0o2N1awzT2p'})
-dato = json.loads(response.text)
-list_datos = []
-list_datos.append(dato)
-for i in list_datos:
-	coordenadas = i['features'][0]['geometry']['coordinates']
-	for e in coordenadas:
-		print e
+
+entrada = raw_input("introduce tu api key:\t")
+url = 'http://servizos.meteogalicia.es/apiv2/getTidesInfo' 
+valores = {'coord':'-8.637,43.45','API_KEY':'%s'}
+valores['API_KEY'] = entrada
+response = requests.get(url, params=valores)
+dato = json.loads(response.text.encode('UTF-8'))
+lista_puertos = []
+lista.puertos.append(dato)
+
+	
+
+
+
+
+
+	
+	
+		
 
 	
 	
