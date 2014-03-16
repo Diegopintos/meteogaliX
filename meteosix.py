@@ -7,19 +7,21 @@ from jinja2 import Template
 
  
 print """
-1 	A Coruña
-3 	Vigo
-4 	Villagarcía
-5 	Ferrol
-6 	Ría de Foz
-7 	Corcubión
-8 	Ría de Camarinas
-9 	Ría de Corme
-10	 A Guarda
-11	 Ribeira
-12	 Muros
-13	 Pontevedra 
-	"""
+
+1 A Coruña
+3 Vigo
+4 Villagarcía
+5 Ferrol
+6 Ría de Foz
+7 Corcubión
+8 Ría de Camarinas
+9 Ría de Corme
+10 A Guarda
+11 Ribeira
+12 Muros
+13 Pontevedra
+"""
+
 
 file = open('plantilla.html','r')
 html = open('mareas.html','w')
@@ -65,39 +67,28 @@ for l in lista_puertos:
 	bajamar = dato['features'][0]['properties']['days'][0]['variables'][0]['summary'][1]['TimeInstant']
 	state_high_tides = dato['features'][0]['properties']['days'][0]['variables'][0]['summary'][0]['state']
 	state_low_tides = dato['features'][0] ['properties']['days'][0]['variables'][0]['summary'][1]['state']
-	print "la marea tiene un estado de:",state_high_tides
+	print "estado de la marea:",state_high_tides,"(pleamar)"
 	print "la pleamar tuvo o tendrá lugar el dia y hora:",pleamar
-	print "la marea tiene un estado de:",state_low_tides
-	print "la bajamar tuvo o tendrá lugar el dia y hora",bajamar
+	print "estado de la marea:",state_low_tides,"(bajamar)"
+	print "la bajamar tuvo o tendrá lugar el dia y hora:",bajamar
 	print "\n"
 	lista_pleamar.append(pleamar)	
-		
+	lista_bajamar.append(bajamar)		
 		
 pagina = ""
 for t in file:
  pagina += t
 plantilla = Template(pagina)
-salida = plantilla.render(puertos=puertos.values(), plea=lista_pleamar, baj=bajamar, state_ple=state_high_tides, state_ba=state_low_tides)	
+salida = plantilla.render(puertos=puertos.values(), plea=lista_pleamar, baj=lista_bajamar, state_ple=state_high_tides, state_ba=state_low_tides)	
 html.write(salida)
 webbrowser.open('mareas.html')
 		
 	
 	
 		
-		
-		
+	
 
-	
-	
-	
-	
-		
-		
 
-	
-	
-		
-	
 
 
 
@@ -107,6 +98,7 @@ webbrowser.open('mareas.html')
 
 	
 	
+
 
 
 
