@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ES"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>estado de las mareas en las costas de galicia</title>
+<style type="text/css">
+ul,li { font-style:italic;text-transform:capitalize;color:#222888;font-family:verdana;font-size:14pt;}
+h3 { color:#888222;font-family:georgia;font-style:italic;font-size:13pt;text-decoration:underline;}
+h1 { text-transform:capitalize;color:#777333;text-align:center;font-style:bold;font-size:25pt;text-decoration:underline;}
+
+</style>
+</head>
+{% block body %}
+<h1>mareas en las costas de galicia</h1>
+{% set cont = 0 %}
+{% for i in puertos %}
+<h3>{{ i }}</h3>
+<ul>
+<li>estado de la marea:{{ state_ple }}</li>
+<li>la pleamar tuvo lugar el dia y hora:{{ plea[cont] }}</li>
+<li>estado de la marea:{{ state_ba }}</li>
+<li>la bajamar tuvo lugar el dia y hora:{{ baj[cont] }}</li>
+</ul>
+{% set cont = cont + 1 %}
+{% endfor %}
+{% endblock %}
+</html>
