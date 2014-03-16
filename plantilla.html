@@ -9,18 +9,19 @@
 ul,li { font-style:italic;text-transform:capitalize;color:#222888;font-family:verdana;font-size:14pt;}
 h3 { color:#888222;font-family:georgia;font-style:italic;font-size:13pt;text-decoration:underline;}
 h1 { text-transform:capitalize;color:#777333;text-align:center;font-style:bold;font-size:25pt;text-decoration:underline;}
-
+h2 { color:#888222;font-family:georgia;text-align:center;font-style:italic;font-size:13pt;text-decoration:underline;}
 </style>
 </head>
 {% block body %}
 <h1>estado de las mareas en las costas de galicia</h1>
+<h2>los resultados fueron obtenidos por las estaciones del meteosix en los puertos mas cercanos</h3>
 {% set cont = 0 %}
 {% for i in puertos %}
 <h3>{{ i }}</h3>
 <ul>
-<li>estado de la marea:{{ state_ple }}</li>
+<li>estado de la marea:{{ state_ple }} (pleamar)</li>
 <li>la pleamar tuvo lugar el dia y hora:{{ plea[cont] }}</li>
-<li>estado de la marea:{{ state_ba }}</li>
+<li>estado de la marea:{{ state_ba }} (bajamar)</li>
 <li>la bajamar tuvo lugar el dia y hora:{{ baj[cont] }}</li>
 </ul>
 {% set cont = cont + 1 %}
