@@ -35,7 +35,7 @@ def index():
 def resultado():
 		
 	localidad = request.forms.get('localidad')
-	url = 'http://servizos.meteogalicia.es/apiv2/findPlaces'	
+	url = 'http://servizos.meteogalicia.es/apiv3/findPlaces'	
 	valores = {'location':localidad,'API_KEY':clave}
 	req = requests.get(url, params=valores)
 	response = json.loads(req.text)
@@ -44,7 +44,7 @@ def resultado():
 	latitud = str(response['features'][0]['geometry']['coordinates'][1])	
 	
 	mareas = request.forms.get('mareas')
-	url = 'http://servizos.meteogalicia.es/apiv2/getTidesInfo'
+	url = 'http://servizos.meteogalicia.es/apiv3/getTidesInfo'
         valores = {'coord':mareas,'API_KEY':clave}
         req = requests.get(url, params=valores)
         response = json.loads(req.text)
